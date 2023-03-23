@@ -1,0 +1,8 @@
+---
+dependencies: []
+
+galaxy_info:
+  role_name: rabbitmq
+  author: Efalia
+  min_ansible_version: 2.9
+  platforms: Debian
