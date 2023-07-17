@@ -14,6 +14,11 @@
   apt:
     deb: "/tmp/{{ rabbitmq_deb }}"
     state: present
+  ignore_errors: true
+
+- name: Attente que RabbitMQ se lance proprement (en cas de montée de version)
+  pause:
+    seconds: 30
 
 - name: Ensure rabbitmq is started and enabled (if configured).
   service:
